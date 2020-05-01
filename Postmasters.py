@@ -1,1 +1,1 @@
-from Postmaster.AI import AIPostmaster
+from blipy.Postmaster.AI import AIPostmaster

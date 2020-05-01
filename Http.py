@@ -1,4 +1,4 @@
-from Types import Data, Method, Response
+from blipy.Types import Data, Method, Response
 from requests import post
 
 BLIP_COMMANDS = 'https://msging.net/commands'

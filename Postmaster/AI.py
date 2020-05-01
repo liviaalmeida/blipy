@@ -1,5 +1,5 @@
-from Http import Postmaster
-from Type import Resource
+from blipy.Http import Postmaster
+from blipy.Types import Resource
 
 class AIPostmaster(Postmaster):
 	def __init__(self, authorization):
