@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="blipy-pkg-liviaalmeida",
+    name="blipy",
     version="0.0.1",
     author="Lívia Almeida",
     author_email="leave.ah@gmail.com",
