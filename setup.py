@@ -1,11 +1,15 @@
 import setuptools
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setuptools.setup(
-    name="blipy",
+    name="blipy-pkg-liviaalmeida",
     version="0.0.1",
     author="Lívia Almeida",
     author_email="leave.ah@gmail.com",
     description="Some BLiP functionalities right out of the box",
+    long_description=long_description,
     url="https://github.com/pypa/sampleproject",
     packages=setuptools.find_packages(),
     classifiers=[
