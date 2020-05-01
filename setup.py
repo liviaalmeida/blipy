@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="blipy",
-    version="0.0.3",
+    version="0.0.4",
     author="Lívia Almeida",
     author_email="leave.ah@gmail.com",
     description="Some BLiP functionalities right out of the box",
