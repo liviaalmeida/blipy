@@ -5,12 +5,12 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="blipy",
-    version="0.0.1",
+    version="0.0.2",
     author="Lívia Almeida",
     author_email="leave.ah@gmail.com",
     description="Some BLiP functionalities right out of the box",
     long_description=long_description,
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/liviaalmeida/blipy",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
