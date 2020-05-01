@@ -1,4 +1,4 @@
-from blipy.Types.Seriable import Seriable
+from blipy.Types import Seriable
 
 keyValueOrDefault = lambda source, key, default: source[key] if key in source else default
 
