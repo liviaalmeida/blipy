@@ -3,7 +3,7 @@ from json import dumps
 
 class Data:
 	@staticmethod
-	def new(method, uri, toId, resourceType = 'None', resource = None):
+	def new(method, uri, toId, resourceType = None, resource = None):
 		data = {
 			'id': str(uuid1()),
 			'uri': uri,

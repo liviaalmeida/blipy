@@ -1,4 +1,4 @@
-class Seriable:
+class Serializable:
 	def __init__(self, hashable):
 		selfDict = {}
 		for key in hashable:
