@@ -25,7 +25,7 @@ class Lime():
 		return self.__sendCommand(Method.Delete, uri, toId)
 
 	def GetAll(self, uri, toId):
-		updateUri = lambda uri, skip: URI.new(uri, { '$skip': skip, '$take': BLIP_COMMANDS })
+		updateUri = lambda uri, skip: URI.new(uri, { '$skip': str(skip), '$take': str(BLIP_TAKE_MAX) })
 		response = self.__sendCommand(Method.Get, updateUri(uri, 0), toId)
 		resource = response.Resource
 		skip = resource.Total
