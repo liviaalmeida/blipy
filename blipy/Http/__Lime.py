@@ -1,4 +1,4 @@
-from blipy.Types import Data, Method, Response
+from blipy.Types import Data, Method, Response, URI
 from requests import post
 
 BLIP_COMMANDS = 'https://msging.net/commands'
@@ -25,7 +25,7 @@ class Lime():
 		return self.__sendCommand(Method.Delete, uri, toId)
 
 	def GetAll(self, uri, toId):
-		updateUri = lambda uri, skip: f'{uri}?$skip={skip}&$take={BLIP_TAKE_MAX}'
+		updateUri = lambda uri, skip: URI.new(uri, { '$skip': skip, '$take': BLIP_COMMANDS })
 		response = self.__sendCommand(Method.Get, updateUri(uri, 0), toId)
 		resource = response.Resource
 		skip = resource.Total

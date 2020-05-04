@@ -18,5 +18,5 @@ class Response(Seriable):
 		response = rawResponse.json()
 		super().__init__(response)
 		self.Status = keyValueOrDefault(response, 'status', None)
-		self.Resource = Resource(self.Resource)
+		self.Resource = Resource(self.Resource) if 'resource' in rawResponse else []
 		self.Success = self.Status == 'success'
