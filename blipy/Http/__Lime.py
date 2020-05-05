@@ -7,7 +7,7 @@ BLIP_TAKE_MAX = 100
 class Lime():
 	def __init__(self, authorization):
 		self.header = {
-			'Authorization': f'Key {authorization}',
+			'Authorization': authorization,
 			'Content-Type': 'application/json'
 		}
 
